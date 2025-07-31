@@ -1,42 +1,47 @@
-# ✅ To-Do List App
+# 👨‍💼 Employee Management System (EMS)
 
-A simple web-based To-Do List application built using:
+A modern **Employee Management System** built with:
 
-- 🔧 Spring Boot (Java)
-- 🌿 Thymeleaf (HTML templating)
-- 🎨 HTML & CSS (for UI)
-- 🗄️ MySQL (database)
-- 📦 DTO (Data Transfer Object) for data mapping
+- ⚛️ React.js (Frontend UI)
+- 🔧 REST API (Spring Boot or any backend)
+- 🗄️ MySQL (Database)
+- 🎨 CSS / Bootstrap for styling
+- 📦 Axios for API communication
 
 ---
 
 ## ✨ Features
 
-- ✅ Add new tasks
-- 📝 Edit existing tasks
-- 📋 View task list
-- ❌ Delete tasks
-- 📌 Mark tasks as completed
+- ➕ Add new employee
+- 📋 View employee list
+- 📝 Update employee details
+- ❌ Delete employee record
+- 🔍 Search and filter employees (optional)
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-- Java (Spring Boot)
-- Thymeleaf
-- HTML, CSS
-- MySQL
-- DTO for model-data separation
+| Layer       | Technology             |
+|-------------|------------------------|
+| Frontend    | React.js               |
+| Styling     | CSS / Bootstrap        |
+| API Client  | Axios (HTTP requests)  |
+| Backend API | Spring Boot / Node.js  |
+| Database    | MySQL                  |
 
 ---
 
-## 📁 Project Structure
+## 📁 Folder Structure (Frontend - React)
+
 src/
-├── controller/ → Handles HTTP requests
-├── service/ → Contains business logic
-├── dto/ → DTO classes for safe data transfer
-├── repository/ → JPA interfaces for DB access
-├── model/ → Entity classes (mapped to MySQL)
-├── templates/ → Thymeleaf pages (.html)
-├── static/ → CSS and other static resources
-
+├── components/ → Reusable UI components
+│ ├── EmployeeList.js
+│ ├── AddEmployee.js
+│ ├── EditEmployee.js
+│ └── Header/Footer.js
+├── services/ → Axios service to connect with API
+│ └── EmployeeService.js
+├── App.js → Main component with routing
+├── index.js → Entry point
+├── App.css → Global styles
